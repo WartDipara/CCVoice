@@ -3,3 +3,8 @@ spring:
     name: CC_SERVICE
   profiles:
     active: mybatis, common
+mybatis:
+  type-aliases-package: com.cc.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
