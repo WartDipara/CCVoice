@@ -30,6 +30,6 @@ build/
 
 ### VS Code ###
 .vscode/
-
-application-common.yml
-application-mybatis.yml
+/src/main/resources/application-common.yml
+/src/main/resources/application-mybatis.yml
+/src/test/
