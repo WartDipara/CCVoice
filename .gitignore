@@ -3,9 +3,6 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-
-src/main/resources/application-common.yml
-src/main/resources/application-mybatis.yml
 ### STS ###
 .apt_generated
 .classpath
@@ -33,3 +30,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+application-common.yml
+application-mybatis.yml
