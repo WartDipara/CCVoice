@@ -33,3 +33,4 @@ build/
 /src/main/resources/application-common.yml
 /src/main/resources/application-mybatis.yml
 /src/test/
+/src/main/resources/application-redis.yml

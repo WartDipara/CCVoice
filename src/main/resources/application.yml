@@ -2,7 +2,7 @@ spring:
   application:
     name: CC_SERVICE
   profiles:
-    active: mybatis, common
+    active: mybatis, common, redis
 mybatis:
   type-aliases-package: com.cc.entity
   mapper-locations: classpath:mapper/*.xml
