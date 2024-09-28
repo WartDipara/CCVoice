@@ -20,8 +20,6 @@ import java.util.Date;
 public class User implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
-
-    private int id;          // 用户id
     private String username; // 用户名，不建议修改
     private String nickname; // 昵称，可修改
     private String password; // 密码

@@ -1,10 +1,17 @@
 spring:
   application:
     name: CC_SERVICE
+  security:
+    enabled: false
   profiles:
     active: mybatis, common, redis
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
 mybatis:
-  type-aliases-package: com.cc.entity
+  type-aliases-package: com.cc.Entity, com.cc.DTO
   mapper-locations: classpath:mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
+server:
+  port: 9090

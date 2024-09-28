@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.elwart.ccvoice.Com.Chat.Mapper.UserMapper">
+
+    <update id="update" parameterType="org.elwart.ccvoice.Com.Common.DTO.UserUpdateRequestDTO">
+        UPDATE users
+        <set>
+            <if test="newNickname != null">
+                nickname = #{newNickname},
+            </if>
+            <if test="newPassword != null">
+                password = #{newPassword},
+            </if>
+        </set>
+        WHERE username = #{username}
+    </update>
+
+</mapper>
